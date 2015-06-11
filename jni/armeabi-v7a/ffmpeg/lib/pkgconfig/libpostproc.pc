@@ -1,0 +1,14 @@
+prefix=/media/sunny/d0dc3b68-8fae-4e2f-9f51-6104d09522cc/test_ffmpeg_3/ffmpeg-2.6.2/../armeabi-v7a/ffmpeg
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 53.3.100
+Requires: 
+Requires.private: libavutil >= 54.20.100
+Conflicts:
+Libs: -L${libdir}  -lpostproc 
+Libs.private: 
+Cflags: -I${includedir}

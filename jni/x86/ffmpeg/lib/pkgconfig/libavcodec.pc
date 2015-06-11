@@ -1,0 +1,14 @@
+prefix=/media/sunny/d0dc3b68-8fae-4e2f-9f51-6104d09522cc/test_ffmpeg_3/ffmpeg-2.6.2/../x86/ffmpeg
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 56.26.100
+Requires: 
+Requires.private: libswresample >= 1.1.100, libavutil >= 54.20.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -lx264 -lm -lz -pthread -lgcc
+Cflags: -I${includedir}

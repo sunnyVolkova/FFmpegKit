@@ -1,0 +1,11 @@
+prefix=/media/sunny/d0dc3b68-8fae-4e2f-9f51-6104d09522cc/test_ffmpeg_3/x264/../x86/x264
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: x264
+Description: H.264 (MPEG4 AVC) encoder library
+Version: 0.146.2538M 121396c
+Libs: -L${exec_prefix}/lib -lx264 
+Libs.private: -lm -ldl
+Cflags: -I${prefix}/include
